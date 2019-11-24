@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import geopy.distance
 
 
-def get_distance_graph(df,dist):
+def get_distance_graph(df, dist):
 
 
     middle_loc = ((df['gps_latitude'].max() + df['gps_latitude'].min()) / 2,
