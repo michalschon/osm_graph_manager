@@ -19,6 +19,7 @@ def get_distance_graph(df, dist):
         return ox.graph_from_point(middle_loc, distance=radius + dist, network_type='drive', simplify=False)
 
     except:
+        print(middle_loc, radius + dist)
         print('Failed to retrieve graph')
         return None
 
